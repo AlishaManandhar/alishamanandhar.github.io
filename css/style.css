@@ -1,0 +1,210 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--font-primary);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --theme-primary-dark: #1f2233;
+    --theme-primary-light: #24283d;
+    --theme-secondary: #fd5c55;
+    --font-primary: #d6d5d4;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-primary);
+}
+
+a:hover {
+    color: var(--theme-secondary) !important;
+}
+
+.text-secondary {
+    color: var(--theme-secondary) !important;
+}
+
+.text-primary {
+    color: var(--font-primary) !important;
+}
+
+nav {
+    background-color: var(--theme-primary-dark) !important;
+}
+
+nav a {
+    color: var(--font-primary) !important;
+}
+
+nav .btn-outline-theme:hover {
+    color: var(--font-primary) !important;
+}
+nav a:is(:active, :hover) {
+    color: var(--theme-secondary);
+}
+
+.navbar-brand {
+    letter-spacing: 1.5px;
+}
+
+.btn-outline-theme {
+    border: 1px solid var(--theme-secondary);
+    color: var(--theme-secondary);
+}
+
+.btn-outline-theme:hover {
+    color: var(--font-primary);
+    background-color: var(--theme-secondary);
+}
+
+.btn-theme{
+    border: 1px solid var(--theme-secondary);
+    color: var(--font-primary);
+    background-color: var(--theme-secondary);
+}
+
+.btn-theme:hover {
+    color: var(--font-primary);
+    border: 1px solid var(--theme-secondary);
+    background-color: transparent;
+}
+
+.section-hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("../images/backgroundImage.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.section-hero .developer {
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-size: 44px;
+}
+
+.section-hero .intro {
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    color: white;
+}
+
+section:nth-child(even) {
+    background: var(--theme-primary-light);
+}
+
+section:nth-child(odd) {
+    background: var(--theme-primary-dark);
+}
+
+.page-title:after {
+    content: "";
+    width: 50px;
+    background-color: var(--theme-secondary);
+    display: block;
+    height: 3px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.section-about .short-intro {
+    text-align: justify;
+    line-height: 150%;
+}
+.section-about .card-about {
+    border: 1px solid var(--theme-secondary);
+    color: white;
+}
+
+.section-about .card-about span {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.service-box {
+    border: 1px solid var(--theme-secondary);
+}
+
+.section-skills .card-skills {
+    border: 1px solid var(--theme-secondary);
+    color: white;
+}
+
+.card-skills span {
+    background-color: var(--font-primary);
+    font-size: medium;
+}
+
+.section-projects img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.section-blogs img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.section-blogs .content {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid var(--theme-secondary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contact-card .detail{
+    color: white !important;
+}
+
+.contact-card:hover{
+    border: 1px solid var(--theme-secondary) !important;
+}
+
+input[type=text], input[type=email]{
+    border: 2px solid #282c3e;
+    color: white !important;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    border: 2px solid var(--theme-secondary) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea{
+    border: 1px solid #282c3e !important;
+    color: white !important;
+}
+
+footer{
+    background-color: var(--theme-primary-light);
+}
+
+footer a {
+    border-radius: 50% !important;
+    text-align: center;
+    display: inline-block;
+    padding: 16px;
+    width: 60px;
+    height: 60px;
+}
+
+footer i{
+    font-size: 15px;
+}
+
+footer .developer{
+    letter-spacing: 1.25px;
+}
