@@ -10,7 +10,8 @@
 :root {
     --theme-primary-dark: #1f2233;
     --theme-primary-light: #24283d;
-    --theme-secondary: #fd5c55;
+     --theme-secondary-light: #20f287;
+     --theme-secondary-dark: #16854c;
     --font-primary: #d6d5d4;
 }
 
@@ -20,11 +21,11 @@ a {
 }
 
 a:hover {
-    color: var(--theme-secondary) !important;
+    color: var( --theme-secondary-light) !important;
 }
 
 .text-secondary {
-    color: var(--theme-secondary) !important;
+    color: var( --theme-secondary-light) !important;
 }
 
 .text-primary {
@@ -43,7 +44,7 @@ nav .btn-outline-theme:hover {
     color: var(--font-primary) !important;
 }
 nav a:is(:active, :hover) {
-    color: var(--theme-secondary);
+    color: var( --theme-secondary-light);
 }
 
 .navbar-brand {
@@ -51,24 +52,24 @@ nav a:is(:active, :hover) {
 }
 
 .btn-outline-theme {
-    border: 1px solid var(--theme-secondary);
-    color: var(--theme-secondary);
+    border: 1px solid var( --theme-secondary-light);
+    color: var( --theme-secondary-light);
 }
 
 .btn-outline-theme:hover {
     color: var(--font-primary);
-    background-color: var(--theme-secondary);
+    background-color: var( --theme-secondary-dark);
 }
 
-.btn-theme{
-    border: 1px solid var(--theme-secondary);
+.btn-theme {
+    border: 1px solid var( --theme-secondary-light);
     color: var(--font-primary);
-    background-color: var(--theme-secondary);
+    background-color: var( --theme-secondary-dark);
 }
 
 .btn-theme:hover {
     color: var(--font-primary);
-    border: 1px solid var(--theme-secondary);
+    border: 1px solid var( --theme-secondary-light);
     background-color: transparent;
 }
 
@@ -109,7 +110,7 @@ section:nth-child(odd) {
 .page-title:after {
     content: "";
     width: 50px;
-    background-color: var(--theme-secondary);
+    background-color: var( --theme-secondary-light);
     display: block;
     height: 3px;
     text-align: center;
@@ -121,7 +122,7 @@ section:nth-child(odd) {
     line-height: 150%;
 }
 .section-about .card-about {
-    border: 1px solid var(--theme-secondary);
+    border: 1px solid var( --theme-secondary-light);
     color: white;
 }
 
@@ -131,11 +132,11 @@ section:nth-child(odd) {
 }
 
 .service-box {
-    border: 1px solid var(--theme-secondary);
+    border: 1px solid var( --theme-secondary-light);
 }
 
 .section-skills .card-skills {
-    border: 1px solid var(--theme-secondary);
+    border: 1px solid var( --theme-secondary-light);
     color: white;
 }
 
@@ -159,36 +160,39 @@ section:nth-child(odd) {
 .section-blogs .content {
     border-left: 1px solid gray;
     border-right: 1px solid gray;
-    border-bottom: 1px solid var(--theme-secondary);
+    border-bottom: 1px solid var( --theme-secondary-light);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.contact-card .detail{
+.contact-card .detail {
     color: white !important;
 }
 
-.contact-card:hover{
-    border: 1px solid var(--theme-secondary) !important;
+.contact-card:hover {
+    border: 1px solid var( --theme-secondary-light) !important;
 }
 
-input[type=text], input[type=email]{
+input[type="text"],
+input[type="email"] {
     border: 2px solid #282c3e;
     color: white !important;
 }
 
-input[type=text]:focus, input[type=email]:focus, textarea:focus{
-    border: 2px solid var(--theme-secondary) !important;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 2px solid var( --theme-secondary-light) !important;
     outline: none !important;
     box-shadow: none !important;
 }
 
-textarea{
+textarea {
     border: 1px solid #282c3e !important;
     color: white !important;
 }
 
-footer{
+footer {
     background-color: var(--theme-primary-light);
 }
 
@@ -201,10 +205,19 @@ footer a {
     height: 60px;
 }
 
-footer i{
+footer i {
     font-size: 15px;
 }
 
-footer .developer{
+footer .developer {
     letter-spacing: 1.25px;
+}
+
+.card-skills .badge{
+    cursor: pointer;
+}
+
+.card-skills .badge:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
 }
